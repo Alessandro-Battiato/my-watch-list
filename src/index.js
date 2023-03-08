@@ -4,9 +4,26 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Login from "./screens/Login";
 import App from "./App";
+import Home from "./screens/Home";
+import Movie from "./screens/Movie";
+import Error from "./screens/Error";
 
 const router = createBrowserRouter([
-  { path: "/", element: <App /> },
+  {
+    path: "/",
+    element: <App />,
+    errorElement: <Error />,
+    children: [
+      {
+        index: true,
+        element: <Home />,
+      },
+      {
+        path: "/movies/:movieId",
+        element: <Movie />,
+      },
+    ],
+  },
   {
     path: "/login",
     element: <Login />,
