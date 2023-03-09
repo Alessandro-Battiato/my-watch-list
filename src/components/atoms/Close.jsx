@@ -1,6 +1,6 @@
 import React from "react";
 
-function Close({ onClick }) {
+const Close = ({ onClick }) => {
   return (
     <button onClick={onClick} className="btn btn-square btn-ghost">
       <svg
@@ -13,6 +13,6 @@ function Close({ onClick }) {
       </svg>
     </button>
   );
-}
+};
 
 export default Close;

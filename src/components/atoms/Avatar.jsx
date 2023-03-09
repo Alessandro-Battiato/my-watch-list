@@ -1,6 +1,6 @@
 import React from "react";
 
-function Avatar() {
+const Avatar = () => {
   return (
     <div className="avatar placeholder">
       <div className="bg-neutral-focus text-neutral-content rounded-full w-24">
@@ -8,6 +8,6 @@ function Avatar() {
       </div>
     </div>
   );
-}
+};
 
 export default Avatar;

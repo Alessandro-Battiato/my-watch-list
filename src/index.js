@@ -7,6 +7,7 @@ import App from "./App";
 import Home from "./screens/Home";
 import Movie from "./screens/Movie";
 import Error from "./screens/Error";
+import { loader as movieLoader } from "./routes/Movie";
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,7 @@ const router = createBrowserRouter([
       {
         path: "/movies/:movieId",
         element: <Movie />,
+        loader: movieLoader,
       },
     ],
   },

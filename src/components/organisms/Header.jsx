@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Hamburger from "../atoms/Hamburger";
 
-function Header({ onToggleMenu, onLogout }) {
+const Header = ({ onToggleMenu, onLogout }) => {
   return (
     <header className="header bg-gray-800 dark">
       <div className="header__content p-4 flex justify-between items-center">
@@ -20,6 +20,6 @@ function Header({ onToggleMenu, onLogout }) {
       </div>
     </header>
   );
-}
+};
 
 export default Header;

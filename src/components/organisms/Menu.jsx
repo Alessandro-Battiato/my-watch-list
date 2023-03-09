@@ -2,7 +2,7 @@ import React from "react";
 import Avatar from "../atoms/Avatar";
 import Close from "../atoms/Close";
 
-function Menu({ onToggle }) {
+const Menu = ({ onToggle }) => {
   return (
     <nav className="menu flex flex-col items-center">
       <div className="menu__toggle ml-auto mt-2 mr-2 md:hidden">
@@ -18,6 +18,6 @@ function Menu({ onToggle }) {
       </div>
     </nav>
   );
-}
+};
 
 export default Menu;

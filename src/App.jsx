@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate, Outlet } from "react-router-dom";
+import "./App.css";
 import Header from "./components/organisms/Header";
 import Menu from "./components/organisms/Menu";
 
@@ -23,7 +24,7 @@ const App = () => {
   }, [navigate]);
 
   return (
-    <div className="app h-screen flex flex-col bg-gray-900 dark">
+    <div className="app h-screen flex flex-col bg-gray-900 dark overflow-y-auto">
       <div className="app__header">
         <Header onToggleMenu={toggleMenu} onLogout={handleLogout} />
       </div>

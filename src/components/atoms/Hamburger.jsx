@@ -1,6 +1,6 @@
 import React from "react";
 
-function Hamburger({ onClick }) {
+const Hamburger = ({ onClick }) => {
   return (
     <button onClick={onClick} className="btn btn-square btn-ghost">
       <svg
@@ -18,6 +18,6 @@ function Hamburger({ onClick }) {
       </svg>
     </button>
   );
-}
+};
 
 export default Hamburger;
